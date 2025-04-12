@@ -20,19 +20,11 @@ public class UserRs implements Serializable {
 
 	private String userName;
 
+	private String phoneNo;
+
 	private String email;
 
-	private String phoneNo;
-	
-	private String company; 
-
-	private String service;
+	private String serviceType;
 
 	private String message;
-	
-	private String url;
-	
-	private String date;
-	
-	private String timezone;
 }

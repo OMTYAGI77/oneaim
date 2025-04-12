@@ -12,24 +12,18 @@ import lombok.Setter;
 public class UserRq extends BaseVM {
 
 	private static final long serialVersionUID = 1L;
-	
+
 	private String docId;
 
 	private String userName;
 
 	private String email;
 
-	private String phoneNo;
-	
-	private String company; 
+	//private String password;
 
-	private String service;
+	private String phoneNo;
+
+	private String serviceType;
 
 	private String message;
-	
-	private String url;
-	
-	private String date;
-	
-	private String timezone;
 }
