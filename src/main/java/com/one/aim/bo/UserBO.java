@@ -27,10 +27,18 @@ public class UserBO {
 	private String email;
 
 	private String phoneno;
+	
+	private String company; 
 
-	private String servicetype;
+	private String service;
 
 	private String message;
+	
+	private String url;
+	
+	private String date;
+	
+	private String timezone;
 
 	private LocalDateTime createdby;
 

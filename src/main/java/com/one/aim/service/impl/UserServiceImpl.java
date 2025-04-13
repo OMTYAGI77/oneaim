@@ -81,13 +81,29 @@ public class UserServiceImpl implements UserService {
 		if (!phoneNo.equals(userBO.getPhoneno())) {
 			userBO.setPhoneno(phoneNo);
 		}
-		String serviceType = Utils.getValidString(rq.getServiceType());
-		if (!serviceType.equals(userBO.getServicetype())) {
-			userBO.setServicetype(serviceType);
+		String serviceType = Utils.getValidString(rq.getService());
+		if (!serviceType.equals(userBO.getService())) {
+			userBO.setService(serviceType);
 		}
 		String userMessage = Utils.getValidString(rq.getMessage());
 		if (!userMessage.equals(userBO.getMessage())) {
 			userBO.setMessage(userMessage);
+		}
+		String timezone = Utils.getValidString(rq.getTimezone());
+		if (!timezone.equals(userBO.getTimezone())) {
+			userBO.setTimezone(timezone);
+		}
+		String company = Utils.getValidString(rq.getCompany());
+		if (!company.equals(userBO.getCompany())) {
+			userBO.setCompany(company);
+		}
+		String date = Utils.getValidString(rq.getDate());
+		if (!date.equals(userBO.getDate())) {
+			userBO.setDate(date);
+		}
+		String url = Utils.getValidString(rq.getUrl());
+		if (!url.equals(userBO.getUrl())) {
+			userBO.setUrl(url);
 		}
 		userRepo.save(userBO);
 		UserRs userRs = UserMapper.mapToUserRs(userBO);
