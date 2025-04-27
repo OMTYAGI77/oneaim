@@ -23,11 +23,11 @@ public class Utils implements Serializable {
 		return ((null == str) ? StringConstants.EMPTY : str.trim());
 	}
 
-	public static boolean isEmpty(List list) {
+	public static boolean isEmpty(List<?> list) {
 		return (((null == list) || (list.isEmpty())) ? true : false);
 	}
 
-	public static boolean isNotEmpty(List list) {
+	public static boolean isNotEmpty(List<?> list) {
 		return !(isEmpty(list));
 	}
 

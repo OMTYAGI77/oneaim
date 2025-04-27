@@ -32,15 +32,25 @@ public class UserHelper {
 				log.error(ErrorCodes.EC_INVALID_EMAIL);
 				errors.add(ErrorCodes.EC_INVALID_EMAIL);
 			}
-
-//			if (Utils.isEmpty(rq.getPassword())) {
-//				log.error(ErrorCodes.EC_REQUIRED_PASSWORD);
-//				errors.add(ErrorCodes.EC_REQUIRED_PASSWORD);
-//			}
-
+			if (Utils.isEmpty(rq.getService())) {
+				log.error(ErrorCodes.EC_REQUIRED_SERVICE);
+				errors.add(ErrorCodes.EC_REQUIRED_SERVICE);
+			}
+			if (Utils.isEmpty(rq.getMessage())) {
+				log.error(ErrorCodes.EC_REQUIRED_MESSAGE);
+				errors.add(ErrorCodes.EC_REQUIRED_MESSAGE);
+			}
 			if (Utils.isEmpty(rq.getPhoneNo())) {
 				log.error(ErrorCodes.EC_REQUIRED_PHONENO);
 				errors.add(ErrorCodes.EC_REQUIRED_PHONENO);
+			}
+			if (Utils.isEmpty(rq.getDate())) {
+				log.error(ErrorCodes.EC_REQUIRED_DATE);
+				errors.add(ErrorCodes.EC_REQUIRED_DATE);
+			}
+			if (Utils.isEmpty(rq.getTimezone())) {
+				log.error(ErrorCodes.EC_REQUIRED_TIMEZONE);
+				errors.add(ErrorCodes.EC_REQUIRED_TIMEZONE);
 			}
 		} catch (Exception e) {
 			log.error("Exception in validateUser(UserRq) - " + e);

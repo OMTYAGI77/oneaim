@@ -28,11 +28,19 @@ public class UserBO {
 
 	private String phoneno;
 
-	private String servicetype;
+	private String company;
+
+	private String service;
 
 	private String message;
 
-	private LocalDateTime createdby;
+	private String url;
 
-	private LocalDateTime updatedby;
+	private String date;
+
+	private String timeslot;
+
+	private String timezone;
+
+	private LocalDateTime createdby;
 }
