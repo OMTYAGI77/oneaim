@@ -33,6 +33,8 @@ public class UserRs implements Serializable {
 	private String url;
 	
 	private String date;
+
+	private String timeSlot;
 	
 	private String timezone;
 }
