@@ -47,6 +47,9 @@ public class UserMapper {
 			if (Utils.isNotEmpty(bo.getDate())) {
 				rs.setDate(bo.getDate());
 			}
+			if (Utils.isNotEmpty(bo.getTimeslot())) {
+				rs.setTimeSlot(bo.getTimeslot());
+			}
 			if (Utils.isNotEmpty(bo.getTimezone())) {
 				rs.setTimezone(bo.getTimezone());
 			}
