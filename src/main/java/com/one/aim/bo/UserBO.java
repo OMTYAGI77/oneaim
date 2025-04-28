@@ -1,7 +1,5 @@
 package com.one.aim.bo;
 
-import java.time.LocalDateTime;
-
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -42,5 +40,4 @@ public class UserBO {
 
 	private String timezone;
 
-	private LocalDateTime createdby;
 }

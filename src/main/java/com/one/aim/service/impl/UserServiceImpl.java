@@ -1,6 +1,5 @@
 package com.one.aim.service.impl;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -58,7 +57,6 @@ public class UserServiceImpl implements UserService {
 			}
 		} else {
 			userBO = new UserBO(); // SAVE
-			userBO.setCreatedby(LocalDateTime.now());
 			message = MessageCodes.MC_SAVED_SUCCESSFUL;
 		}
 		String email = Utils.getValidString(rq.getEmail());
