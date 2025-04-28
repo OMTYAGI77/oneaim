@@ -101,6 +101,10 @@ public class UserServiceImpl implements UserService {
 		if (!date.equals(userBO.getDate())) {
 			userBO.setDate(date);
 		}
+		String timeSlot = Utils.getValidString(rq.getTimeSlot());
+		if (!timeSlot.equals(userBO.getTimeslot())) {
+			userBO.setTimeslot(timeSlot);
+		}
 		String url = Utils.getValidString(rq.getUrl());
 		if (!url.equals(userBO.getUrl())) {
 			userBO.setUrl(url);
