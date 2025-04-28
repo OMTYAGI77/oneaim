@@ -37,6 +37,8 @@ public class UserBO {
 	private String url;
 	
 	private String date;
+
+	private String timeslot;
 	
 	private String timezone;
 
