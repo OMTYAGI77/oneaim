@@ -1,5 +1,9 @@
 package com.one.aim.service.impl;
 
+<<<<<<< HEAD
+=======
+import java.time.LocalDateTime;
+>>>>>>> 5d64f8d57e3fce7ec763847c0e2d0fb7ecd5efcf
 import java.util.List;
 import java.util.Optional;
 
@@ -55,8 +59,17 @@ public class UserServiceImpl implements UserService {
 				log.error(ErrorCodes.EC_USER_NOT_FOUND);
 				return ResponseUtils.failure(ErrorCodes.EC_USER_NOT_FOUND);
 			}
+<<<<<<< HEAD
 		} else {
 			userBO = new UserBO(); // SAVE
+=======
+			userBO.setUpdatedby(LocalDateTime.now());
+			message = MessageCodes.MC_UPDATED_SUCCESSFUL;
+		} else {
+			userBO = new UserBO(); // SAVE
+			userBO.setCreatedby(LocalDateTime.now());
+			userBO.setUpdatedby(LocalDateTime.now());
+>>>>>>> 5d64f8d57e3fce7ec763847c0e2d0fb7ecd5efcf
 			message = MessageCodes.MC_SAVED_SUCCESSFUL;
 		}
 		String email = Utils.getValidString(rq.getEmail());

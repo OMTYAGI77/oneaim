@@ -30,7 +30,11 @@ public class UserRq extends BaseVM {
 	private String url;
 	
 	private String date;
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 5d64f8d57e3fce7ec763847c0e2d0fb7ecd5efcf
 	private String timeSlot;
 	
 	private String timezone;
