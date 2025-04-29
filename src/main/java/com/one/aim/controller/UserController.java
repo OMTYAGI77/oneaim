@@ -3,10 +3,6 @@ package com.one.aim.controller;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-<<<<<<< HEAD
-=======
-import org.springframework.web.bind.annotation.GetMapping;
->>>>>>> 5d64f8d57e3fce7ec763847c0e2d0fb7ecd5efcf
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
