@@ -1,6 +1,5 @@
 package com.one.aim.service.impl;
 
-import java.time.LocalDateTime;
 import java.util.List;
 import java.util.Optional;
 
@@ -62,11 +61,6 @@ public class UserServiceImpl implements UserService {
 		}
 		String email = Utils.getValidString(rq.getEmail());
 		if (!email.equals(Utils.getValidString(userBO.getEmail()))) {
-			UserBO extUserBO = userRepo.findByEmail(email);
-			if (extUserBO != null) {
-				log.error(ErrorCodes.EC_USER_ALREADY_EXIST);
-				return ResponseUtils.failure(ErrorCodes.EC_USER_ALREADY_EXIST);
-			}
 			userBO.setEmail(email);
 		}
 		String userName = Utils.getValidString(rq.getUserName());
