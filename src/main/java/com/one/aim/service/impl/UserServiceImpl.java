@@ -48,7 +48,7 @@ public class UserServiceImpl implements UserService {
 		String message = StringConstants.EMPTY;
 		UserBO userBO = null;
 		if (Utils.isNotEmpty(docId)) { // UPDATE
-			long id = Long.parseLong(docId);
+			Integer id = Integer.parseInt(docId);
 			Optional<UserBO> optUserBO = userRepo.findById(id);
 			userBO = optUserBO.get();
 			if (userBO == null) {
