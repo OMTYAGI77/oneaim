@@ -17,7 +17,7 @@ import lombok.Setter;
 public class UserBO {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
+	@GeneratedValue(strategy = GenerationType.SEQUENCE)
 	private Integer id;
 
 	private String username;
